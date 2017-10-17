@@ -1,6 +1,6 @@
 # GraphMining
 
-Per le dipendenze
+Per aggiungere le dipendenze necessarie
 ```
 Pkg.add("LightGraphs")
 Pkg.add("GraphPlot")
@@ -8,13 +8,13 @@ Pkg.add("MetaGraphs")
 Pkg.add("GraphIO")
 ```
 
-Per iJulia
+Per il pacchetto iJulia
 
 ```
 Pkg.add("IJulia")
 ```
 
-Poi da terminale
+Poi da terminale per aprire il notebook
 
 ```
 julia>    using IJulia
