@@ -26,5 +26,5 @@ oppure avendo anaconda
 > jupyter-notebook
 ```
 # Links a nbviewer
-[LightGraphsTest](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/LightGraphsTest.ipynb)
-[LightGraphsTest](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/DijkstraN.ipynb)
+- [LightGraphsTest](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/LightGraphsTest.ipynb)
+- [DijkstraN](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/DijkstraN.ipynb)
