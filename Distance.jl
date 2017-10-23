@@ -14,7 +14,7 @@ function randKVector(v::UnitRange{Int64}, k::Int64)
 end
 
 
-g = load("karate.gml", "graph", :gml)
+g = load("internet.gml", "graph", :gml)
 numV = nv(g)
 
 # Grafo di prova
@@ -34,20 +34,26 @@ numV = nv(g)
 # Distanza precisa
 distFull = 0
 
+println("Distanza precisa")
+tic()
 for v in vertices(g)
     distFull = distFull + sum(gdistances(g, v))
 end
-agvFull = distFull/((numV)*(numV -1))
+agvFull = distFull/(numV*(numV -1))
 println(agvFull)
+toc()
 
 # Distanza approssimata
 distApp = 0
-k = convert(Int64, floor(log(numV) * 1)) # 100 per precisione allo 0.1
+k = convert(Int64, floor(log(numV) * 1000)) # 100 per precisione allo 0.1
 k = k < numV ? k : numV # il sottoinsieme preso puo essere al massimo grande quanto quello originale
 vertexSample = randKVector(vertices(g), k)
-println(vertexSample)
+
+println("Distanza approssimata")
+tic()
 for v in vertexSample
     distApp = distApp + sum(gdistances(g, v))
 end
 agvApp = distApp/( k * (numV -1))
+toc()
 println(agvApp)
