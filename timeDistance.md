@@ -10,7 +10,7 @@ Il grafo analizzato è una instantanea della struttura di Internet a livello di 
 - Numero archi $48436$
 - $Log(22963) \sim  10$
 
-Per calcolare la distanza esatta lo script Julia impiega 10 minuti
+Per calcolare la distanza esatta lo [script](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/DistanceNb.ipynb) Julia impiega 10 minuti
 ``` Julia
 Distanza precisa
 3.842426273858345

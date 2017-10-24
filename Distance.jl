@@ -1,4 +1,5 @@
 using LightGraphs
+using GraphIO
 
 # Restituisce un sottoinsieme di k elementi random del grafo
 function randKVector(v::UnitRange{Int64}, k::Int64)
@@ -14,7 +15,7 @@ function randKVector(v::UnitRange{Int64}, k::Int64)
 end
 
 
-g = load("karate.gml", "graph", :gml)
+g = loadgraph("karate.gml", "graph", GMLFormat())
 numV = nv(g)
 
 # Distanza precisa
