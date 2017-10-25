@@ -26,7 +26,7 @@ tic()
 for v in vertices(g)
     distFull = distFull + sum(gdistances(g, v))
 end
-agvFull = distFull/(numV*(numV -1))
+agvFull = distFull / (numV * (numV - 1))
 println(agvFull)
 toc()
 
@@ -41,6 +41,6 @@ tic()
 for v in vertexSample
     distApp = distApp + sum(gdistances(g, v))
 end
-agvApp = distApp/( k * (numV -1))
+agvApp = distApp / (k * (numV - 1))
 toc()
 println(agvApp)
