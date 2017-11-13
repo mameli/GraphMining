@@ -15,7 +15,7 @@ function randKVector(v::UnitRange{Int64}, k::Int64)
 end
 
 
-g = loadgraph("karate.gml", "graph", GMLFormat())
+g = loadgraph("internet.gml", "graph", GMLFormat())
 numV = nv(g)
 
 # Distanza precisa
