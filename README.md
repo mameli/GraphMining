@@ -26,5 +26,7 @@ oppure avendo anaconda
 > jupyter-notebook
 ```
 # Links a nbviewer
-- [LightGraphsTest](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/LightGraphsTest.ipynb)
-- [DijkstraN](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/DijkstraN.ipynb)
+- [LightGraphsTest](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/Notebooks/LightGraphsTest.ipynb)
+- [DijkstraN](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/Notebooks/DijkstraN.ipynb)
+- [Distance Avg](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/Notebooks/DistanceNb.ipynb)
+- [PowerLaw](http://nbviewer.jupyter.org/github/mameli/GraphMining/blob/master/Notebooks/powerLaw.ipynb)
