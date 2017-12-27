@@ -3,7 +3,7 @@ using GraphIO
 using StatsBase
 using Plots
 
-g = loadgraph("karate.gml", "graph", GMLFormat())
+g = loadgraph("karate.lg", "graph", GMLFormat())
 deg = degree_centrality(g, normalize=false)
 println(deg)
 occurences = countmap(deg)

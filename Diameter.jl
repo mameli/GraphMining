@@ -1,7 +1,7 @@
 using LightGraphs
 using GraphIO
 
-function diamiter(g::AbstractGraph, u::Int64)
+function diameter(g::AbstractGraph, u::Int64)
 	tic()
 	deg = degree_centrality(g, normalize=false)
 	# u = findmax(deg)[2]
@@ -44,7 +44,7 @@ sampleSize = 10
 listEndTimes = zeros(Float32, sampleSize)
 
 for i = 1:sampleSize
-	listEndTimes[i] = diamiter(g, rand(1:nv(g)))
+	listEndTimes[i] = diameter(g, rand(1:nv(g)))
 	println(listEndTimes[i])
 end
 
